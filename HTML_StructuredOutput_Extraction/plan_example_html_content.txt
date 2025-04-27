@@ -1,0 +1,251 @@
+<div class="broadband-list-container ">
+            <div class="broadband-list-details big-padding">
+                <h4 class="heading-three small-padding" aria-label="Broadband Facts of Platinum Unlimited" tabindex="-1">Broadband Facts</h4>
+                <div class="border-bottom-black-bold small-padding">
+                    <p class="caption-five min-padding">
+                        Straight Talk Wireless 
+                    </p>
+                    <p class="caption-five min-padding pt-01"> Platinum Unlimited</p>
+                    <p class="caption-six">Mobile Broadband Consumer Disclosure
+                    </p>
+                </div>
+                <div class="border-bottom-black-normal">
+                    <div class="row ml-0 mr-0 small-padding">
+                        <div class="col-10 text-left p-0">
+                            <p class="caption-four" role="heading" aria-level="5">Monthly Price</p>
+                        </div>
+                        <div class="col-2 text-right p-0">
+                            <p class="caption-four"> $65.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom-black small-padding">
+                    <p class="caption-six">
+                    This Monthly Price is not an introductory rate.
+                    </p>
+                    <p class="caption-six">
+                    This Monthly Price does not require a contract.
+                    </p>
+                </div>
+
+                <div class="border-bottom-black-normal small-padding">
+                    <p class="caption-five min-padding" role="heading" aria-level="5">Additional Charges &amp; Terms</p>
+                    <div class="row ml-0 mr-0">
+                        <div class="col-10 text-left p-0">
+                            <p class="caption-six min-padding">Activation Fee</p>
+                        </div>
+                        <div class="col-2 text-right p-0">
+                            <p class="caption-six-bold">$0.00</p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0">
+                        <div class="col-10 text-left p-0">
+                            <p class="caption-six min-padding">Provider Monthly Fees</p>
+                        </div>
+                        <div class="col-2 text-right p-0">
+                            <p class="caption-six-bold">$0.00</p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0">
+                        <div class="col-10 text-left p-0">
+                            <p class="caption-six min-padding">One-Time Fees at the Time of Purchase</p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0 min-padding">
+                        <div class="col-8 text-left left-padding">
+                            <p class="caption-six">Federal Universal Service Fund</p>
+                        </div>
+                        <div class="col-4 text-right right-padding">
+                            <p class="caption-six-bold"> $0.37</p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0 min-padding">
+                        <div class="col-7 text-left left-padding">
+                            <p class="caption-six">Regulatory Cost Recovery</p>
+                        </div>
+                        <div class="col-5 text-right right-padding">
+                            <p class="caption-six-bold">$0.13</p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0 min-padding">
+                        <div class="col-7 text-left p-0">
+                            <p class="caption-six">Early Termination Fee</p>
+                        </div>
+                        <div class="col-5 text-right p-0">
+                            <p class="caption-six-bold"> $0.00</p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0">
+                        <div class="col-7 text-left p-0">
+                            <p class="caption-six">Government Taxes</p>
+                        </div>
+                        <div class="col-5 text-right p-0">
+                            <p class="caption-six-bold"> Varies by location</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="small-padding">
+                    <p class="caption-five min-padding">Discounts &amp; Bundles</p>
+                    <div class="caption-seven"> <p><a href="https://www.straighttalk.com/discount-and-bundles" aria-label=" Click here for available discounts and pricing options for broadband service bundled with other services(Opens in new tab)" target="_blank" data-gtm-cta="click_here">Click here</a>&nbsp;for available discounts and pricing options for broadband service bundled with other services like video, phones, and wireless services, and use of your own equipment like modem or routers.</p>
+
+                    </div>
+                </div>
+                <div class="border-bottom-black-normal small-padding">
+                    <p class="caption-five min-padding" role="heading" aria-level="5"></p>
+                    <div class="caption-seven"> 
+                    </div>
+                    <div class="row ml-0 mr-0 small-padding-one">
+                        <div class="col-10 text-left p-0">
+                            <p class="caption-five" role="heading" aria-level="6">
+                            </p>
+                        </div>
+                        <div class="col-2 text-right p-0">
+                            <p class="caption-five"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom-black small-padding">
+                    <p class="caption-five min-padding" role="heading" aria-level="5">Speeds Provided with Plan</p>
+                    <p class="caption-five min-padding" role="heading" aria-level="6">5G Ultra Wideband</p>
+                    <div class="row ml-0 mr-0 min-padding">
+                        <div class="col-7 text-left">
+                            <p class="caption-six">Typical Download Speed
+                            </p>
+                        </div>
+                        <div class="col-5 text-right p-0">
+                            <p class="caption-six-bold">195-634 Mbps</p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0 min-padding">
+                        <div class="col-7 text-left">
+                            <p class="caption-six">Typical Upload Speed
+                            </p>
+                        </div>
+                        <div class="col-5 text-right right-padding">
+                            <p class="caption-six-bold">10-53 Mbps</p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0">
+                        <div class="col-7 text-left">
+                            <p class="caption-six">Typical Latency
+                            </p>
+                        </div>
+                        <div class="col-5 text-right right-padding">
+                            <p class="caption-six-bold">37-57 ms</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom-black small-padding ">
+                    <p class="caption-five min-padding" role="heading" aria-level="6">5G</p>
+                    <div class="row ml-0 mr-0 min-padding">
+                        <div class="col-7 text-left">
+                            <p class="caption-six">Typical Download Speed
+                            </p>
+                        </div>
+                        <div class="col-5 text-right p-0">
+                            <p class="caption-six-bold">35-143 Mbps</p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0 min-padding">
+                        <div class="col-7 text-left">
+                            <p class="caption-six">Typical Upload Speed
+                            </p>
+                        </div>
+                        <div class="col-5 text-right right-padding">
+                            <p class="caption-six-bold">5-31 Mbps</p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0">
+                        <div class="col-7 text-left">
+                            <p class="caption-six">Typical Latency
+                            </p>
+                        </div>
+                        <div class="col-5 text-right right-padding">
+                            <p class="caption-six-bold">42-64 ms</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom-black-normal small-padding">
+                    <p class="caption-five min-padding" role="heading" aria-level="6">4G LTE</p>
+
+                    <div class="row ml-0 mr-0 min-padding">
+                        <div class="col-7 text-left">
+                            <p class="caption-six">Typical Download Speed
+                            </p>
+                        </div>
+                        <div class="col-5 text-right right-padding">
+                            <p class="caption-six-bold">11-75 Mbps</p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0 min-padding">
+                        <div class="col-7 text-left">
+                            <p class="caption-six">Typical Upload Speed
+                            </p>
+                        </div>
+                        <div class="col-5 text-right right-padding">
+                            <p class="caption-six-bold">1-13 Mbps</p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0">
+                        <div class="col-7 text-left">
+                            <p class="caption-six">Typical Latency
+                            </p>
+                        </div>
+                        <div class="col-5 text-right right-padding">
+                            <p class="caption-six-bold">49-75 ms</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom-black-normal small-padding">
+                    <div class="row ml-0 mr-0 ">
+                        <div class="col-10 text-left p-0">
+                            <div class="caption-five min-padding" role="heading" aria-level="5"><p><a href="https://www.verizon.com/support/tracfone-open-internet-legal/" target="_blank" aria-label="Data Included(Opens in new tab)" data-gtm-cta="data_included">Data Included</a> with Monthly Price</p>
+</div>
+                        </div>
+                        <div class="col-2 text-right p-0">
+                            <p class="caption-six-bold"> Unlimited</p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0">
+                        <div class="col-10 text-left">
+                            <p class="caption-six">Charges for additional Data Usage</p>
+                        </div>
+                        <div class="col-2 text-right p-0">
+                            <p class="caption-six-bold"> $0.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom-black-bold small-padding">
+                    <div class="row ml-0 mr-0 read-pol">
+                        <div class="col-7 text-left p-0">
+                            <p class="caption-five" role="heading" aria-level="5">Network Management</p>
+                        </div>
+                        <div class="col-5 text-right p-0">
+                            <p class="caption-five"> <a href="https://www.verizon.com/about/our-company/network-management" class="caption-one" aria-label="Read our Policy of Network Management Opens External Website in new tab" target="_blank" data-gtm-cta="read_our_policy">Read our Policy</a></p>
+                        </div>
+                    </div>
+                    <div class="row ml-0 mr-0 read-pol">
+                        <div class="col-7 text-left p-0">
+                            <p class="caption-five" role="heading" aria-level="5">Privacy</p>
+                        </div>
+                        <div class="col-5 text-right p-0">
+                            <p class="caption-five"> <a href="https://www.tracfonewirelessinc.com/en/Privacy%2BPolicy/" class="caption-one" aria-label="Read our Policy of Privacy Opens External Website in new tab" target="_blank" data-gtm-cta="read_our_policy">Read our Policy</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom-black-normal small-padding">
+                    <p class="caption-five min-padding" role="heading" aria-level="5">Customer Support</p>
+                    <p class="caption-six left-padding">Contact Us:  <a href="https://www.straighttalk.com/support/contact" class="caption-two" aria-label="Straight Talk Wireless Contact Us opens in new tab" target="_blank" data-gtm-cta="https_www_straighttalk_com_support_contact">https://www.straighttalk.com/support/contact</a>
+                    </p><p class="caption-six left-padding">1-877-430-2355</p>
+                    <p></p>
+                </div>
+                <div class="facts-disclaimer small-padding-one">
+                    <p class="caption-seven min-padding">Learn more about the terms used on this label by visiting the Federal Communications Commission's Consumer Resource Center.
+                    </p>
+                    <p class="caption-eight text-left min-padding"> <a href="https://www.fcc.gov/consumer" aria-label="Federal Communications Commission Website Consumer Help Center Opens External Website in new tab" target="_blank" data-gtm-cta="fcc_gov_consumer">fcc.gov/consumer</a></p>
+                    <p class="caption-seven">M0006855639ST0000957009143</p>
+                </div>
+                <p class="sr-only">Broadband Facts Label Ends for Platinum Unlimited</p>
+            </div>
+        </div>
