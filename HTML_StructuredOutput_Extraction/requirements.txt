@@ -1,5 +1,0 @@
-streamlit
-pydantic
-langchain_core
-langchain_community
-ollama
