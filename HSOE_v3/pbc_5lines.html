@@ -1,0 +1,1348 @@
+<html>
+    <div class="bg-soft-grey" data-target="tabs-75">
+        <div class="container pl-0 pr-0" id="fccLabelSection">
+            <div class="broadband-plans-list">
+                <div class="plan-list-heading">
+                    <h2 class="heading-two" tabindex="-1">
+                        Broadband Facts
+                        <span class="caption-one">
+                            (<span class="total-count-fcc">3</span><span class="sr-only"> Items</span>)
+                        </span>
+                    </h2>
+                    <p class="pt-10 subtitle-three-px">
+                        Want to compare plans? Read the labels to get the details on pricing, data allowances and limits, network speeds, and more.
+                    </p>
+                </div>
+                <div>
+                    
+    
+    
+    <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+        
+        <div class="fccplanlabels aem-GridColumn aem-GridColumn--default--12">
+        
+            
+    <script class="card_fact_card_template" type="text/mustache">
+    {{#each this}}
+        {{#each this}}
+        {{#if (or @first this.isPLP)}}
+            {{#if this.isPLP}}
+                {{#if this.isMlPlp}}
+                    <div class="multiline-plan-card" data-partnumber="{{this.commercePartNumber}}" tabindex="-1" data-gtm-asset="{{this.commercePartNumber}}" data-gtm-placement="plan_card">
+                        <div class="plan-heading">
+                            <p class="heading-three">{{this.planName}}</p>
+                            <p class="subtitle-one plan-data pt-3 tablet-subtitle-one" aria-hidden="true">{{{this.planNameSubHeader}}}</p>
+                            <p class="sr-only">{{this.planNameSubHeaderAriaLbl}}</p>
+                            {{#if taxInclusive}}
+                                <p class="subtitle-one plan-data"></p>
+                            {{/if}}
+                        </div>
+                {{else}}
+                    <div class="col pl-0 pr-0">
+                        <div class="plan-card text-center mb-60 d-flex flex-column" data-partnumber="{{this.commercePartNumber}}" tabindex="-1" data-gtm-asset="{{this.commercePartNumber}}" data-gtm-placement="plan_card">
+    
+                        <div class="promo-text promo-plan-text current-plan-text {{this.promoColorClass}}">
+                            {{{this.plancardheader}}}
+                        </div>
+    
+                {{/if}}
+            {{/if}}
+            <div class="broadband-list-container {{#if useSmallCaptions}}big-padding{{/if}}">
+                <div class="broadband-list-details {{#if useSmallCaptions}}{{else}}big-padding{{/if}}">
+                    <h4 class="heading-three small-padding" aria-label="{{this.fccHeading}} of {{this.planDescription.planHeading}}" tabindex="-1">{{this.fccHeading}}</h4>
+                    <div class="border-bottom-black-bold small-padding">
+                        <p class="caption-five min-padding">
+                            {{this.brandHeading}} 
+                        </p>
+                        <p class="caption-five min-padding pt-01"> {{this.planDescription.planHeading}}</p>
+                        <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.planDescription.planDescription}}
+                        </p>
+                    </div>
+                    <div class="border-bottom-black-normal">
+                        <div class="row ml-0 mr-0 small-padding">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-four">{{this.planDescription.monthlyPlanPriceLabel}}</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-four"> {{this.planDescription.monthlyPlanPriceValue}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black small-padding">
+                        <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">
+                        {{{this.planDescription.monthlyIntroductoryPart}}}
+                        </p>
+                        <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">
+                        {{{this.planDescription.monthlyIntroductoryDescription}}}
+                        </p>
+                    </div>
+    
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding">{{this.additionalCharges.additionalChargesHeading}}</p>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left p-0">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}} min-padding">{{this.additionalCharges.activationFeesLabel}}</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.additionalCharges.activationFeesValue}}</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left p-0">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}} min-padding">{{this.additionalCharges.providerMonthlyFeesLabel}}</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.additionalCharges.providerMonthlyFeesValue}}</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left p-0">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}} min-padding">{{this.additionalCharges.oneFeesSubHeading.oneTimeFeesSubHeading}}</p>
+                            </div>
+                            {{#if taxInclusive}}
+                                <div class="col-2 text-right p-0">
+                                    <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">$0.00</p>
+                                </div>
+                            {{/if}}
+                        </div>
+                        {{#unless taxInclusive}}
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-8 text-left left-padding">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.additionalCharges.oneFeesSubHeading.fusfLabel}}</p>
+                            </div>
+                            <div class="col-4 text-right right-padding">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}"> {{this.additionalCharges.oneFeesSubHeading.fusfValue}}</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left left-padding">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.additionalCharges.oneFeesSubHeading.frcrLabel}}</p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.additionalCharges.oneFeesSubHeading.frcrValue}}</p>
+                            </div>
+                        </div>
+                        {{#if this.additionalCharges.oneFeesSubHeading.e911FlatTax}}
+                            <div class="row ml-0 mr-0 min-padding">
+                                <div class="col-7 text-left left-padding">
+                                    <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.additionalCharges.oneFeesSubHeading.e911FlatTaxLabel}}</p>
+                                </div>
+                                <div class="col-5 text-right right-padding">
+                                    <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.additionalCharges.oneFeesSubHeading.e911FlatTax}}</p>
+                                </div>
+                            </div>
+                        {{/if}}
+                        {{#if this.additionalCharges.oneFeesSubHeading.salesTax}}
+                            <div class="row ml-0 mr-0 min-padding">
+                                <div class="col-7 text-left left-padding">
+                                    <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.additionalCharges.oneFeesSubHeading.salesTaxLabel}}</p>
+                                </div>
+                                <div class="col-5 text-right right-padding">
+                                    <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.additionalCharges.oneFeesSubHeading.salesTax}}</p>
+                                </div>
+                            </div>
+                        {{/if}}
+                        {{#if this.additionalCharges.oneFeesSubHeading.e911Tax}}
+                            <div class="row ml-0 mr-0 min-padding">
+                                <div class="col-7 text-left left-padding">
+                                    <p aria-hidden="true" class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.additionalCharges.oneFeesSubHeading.e911TaxLabel}}</p>
+                                    <p class="sr-only">{{get911AccessibilityText this.additionalCharges.oneFeesSubHeading.e911TaxLabel}}</p>
+                                </div>
+                                <div class="col-5 text-right right-padding">
+                                    <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.additionalCharges.oneFeesSubHeading.e911Tax}}</p>
+                                </div>
+                            </div>
+                        {{/if}}
+                        {{/unless}}
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left p-0">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.additionalCharges.earlyTerminationFeeLabel}}</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}"> {{this.additionalCharges.earlyTerminationFeeValue}}</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left p-0">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.additionalCharges.governmentTaxesLabel}}</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}"> {{this.additionalCharges.governmentTaxesValue}}</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="small-padding">
+                        <p class="caption-five min-padding">{{this.discountAffordable.discountHeading}}</p>
+                        <div class="{{#if useSmallCaptions}}caption-eight{{else}}caption-seven{{/if}}"> {{{this.discountAffordable.discountDescription}}}
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding">{{this.discountAffordable.acpHeading}}</p>
+                        <div class="{{#if useSmallCaptions}}caption-eight{{else}}caption-seven{{/if}}">{{{this.discountAffordable.acpDescription}}} 
+                        </div>
+                        <div class="row ml-0 mr-0 small-padding-one">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-five">{{this.discountAffordable.participatesInTheAcpLabel}}
+                                </p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-five">{{this.discountAffordable.participatesInTheAcpValue}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="{{#if this.speeds.5gUltrawide.typicalDownloadSpeed5GUltraValue}}border-bottom-black{{else}}pb-0{{/if}} small-padding">
+                        <p class="caption-five min-padding">{{this.speeds.speedsProvidedWithPlanHeading}}</p>
+                    {{#if this.speeds.5gUltrawide.typicalDownloadSpeed5GUltraValue}}
+                        <p class="caption-five min-padding">{{this.speeds.5gUltrawide.5gUltrawideNetworkSubheading}}</p>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.speeds.5gUltrawide.typicalDownloadSpeed5GUltraLabel}}
+                                </p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.speeds.5gUltrawide.typicalDownloadSpeed5GUltraValue}}</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.speeds.5gUltrawide.typicalUploadSpeed5GUltraLabel}}
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.speeds.5gUltrawide.typicalUploadSpeed5GUltraValue}}</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.speeds.5gUltrawide.typicalLatency5GUltraLabel}}
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.speeds.5gUltrawide.typicalLatency5GUltraValue}}</p>
+                            </div>
+                        </div>
+                    {{/if}}
+                    </div>
+                    <div class="border-bottom-black small-padding {{#unless this.speeds.5gUltrawide.typicalDownloadSpeed5GUltraValue}}pt-0{{/unless}}">
+                        <p class="caption-five min-padding">{{this.speeds.5g.gNationwideNetworkSubheading}}</p>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.speeds.5g.typicalDownloadSpeedLabel}}
+                                </p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.speeds.5g.typicalDownloadSpeedValue}}</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.speeds.5g.typicalUploadSpeedLabel}}
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.speeds.5g.typicalUploadSpeedValue}}</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.speeds.5g.typicalLatencyLabel}}
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.speeds.5g.typicalLatencyValue}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding">{{this.speeds.4g.gLteSubheading}}</p>
+    
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.speeds.4g.typicalDownloadSpeed4gLabel}}
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.speeds.4g.typicalDownloadSpeed4gValue}}</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.speeds.4g.typicalUploadSpeed4gLabel}}
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.speeds.4g.typicalUploadSpeed4gValue}}</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.speeds.4g.typicalLatency4gLabel}}
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}">{{this.speeds.4g.typicalLatency4gValue}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <div class="row ml-0 mr-0 ">
+                            <div class="col-10 text-left p-0">
+                                <div class="caption-five min-padding">{{{this.dataIncluded.dataIncludedWithMonthlyPriceLabel}}}</div>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}"> {{this.dataIncluded.dataIncludedWithMonthlyPriceValue}}</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left">
+                                <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}}">{{this.dataIncluded.chargesForAdditionalDataUsageLabel}}</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="{{#if useSmallCaptions}}caption-seven-bold{{else}}caption-six-bold{{/if}}"> {{this.dataIncluded.chargesForAdditionalDataUsageValue}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-bold small-padding">
+                        <div class="row ml-0 mr-0 read-pol">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-five">{{this.networkPrivacy.networkManagementHeading}}</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-five"> <a href="{{this.networkPrivacy.networkManagementInfoValue}}" class="{{#if useSmallCaptions}}caption-five{{else}}caption-one{{/if}}" aria-label="{{this.networkPrivacy.networkManagementInfoLabel}} of {{this.networkPrivacy.networkManagementHeading}} Opens External Website in new tab" target="_blank">{{this.networkPrivacy.networkManagementInfoLabel}}</a></p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 read-pol">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-five">{{this.networkPrivacy.privacyHeading}}</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-five"> <a href="{{this.networkPrivacy.privacyInfoValue}}" class="{{#if useSmallCaptions}}caption-five{{else}}caption-one{{/if}}" aria-label="{{this.networkPrivacy.privacyInfoLabel}} of {{this.networkPrivacy.privacyHeading}} Opens External Website in new tab" target="_blank">{{this.networkPrivacy.privacyInfoLabel}}</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding">{{this.customerSupport.customerSupportHeading}}</p>
+                        <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}} left-padding">{{this.customerSupport.customerSupportInfoLabel}} <a href="{{this.customerSupport.customerSupportInfoValue}}" class="{{#if useSmallCaptions}}caption-seven{{else}}caption-two{{/if}}" aria-label="{{this.brandHeading}} Contact Us opens in new tab" target="_blank">{{this.customerSupport.customerSupportInfoValue}}</a>
+                        <p class="{{#if useSmallCaptions}}caption-seven{{else}}caption-six{{/if}} left-padding">{{this.customerSupport.customerSupportNumber}}</p>
+                        </p>
+                    </div>
+                    <div class="facts-disclaimer small-padding-one">
+                        <p class="{{#if useSmallCaptions}}caption-eight{{else}}caption-seven{{/if}} min-padding">{{this.learnMore.learnMoreDescription}}
+                        </p>
+                        <p class="{{#if useSmallCaptions}}caption-nine{{else}}caption-eight{{/if}} text-left min-padding"> <a href="{{this.learnMore.linkToFcc}}" aria-label="Federal Communications Commission Website Consumer Help Center Opens External Website in new tab" target="_blank">{{this.learnMore.linkToFccLabel}}</a></p>
+                        <p class="{{#if useSmallCaptions}}caption-eight{{else}}caption-seven{{/if}}">{{this.uniqueId}}</p>
+                    </div>
+                    <p class="sr-only">Broadband Facts Label Ends for {{this.planDescription.planHeading}}</p>
+                </div>
+            </div>
+            {{#if this.isPLP}}
+                {{#if this.isMlPlp}}
+                    <div class="multiline-plan-card__cta">
+                        <div class="view-plan-detail-btn extra-large secondary-btn">
+                            <a class="btn" data-gtm-cta="{{this.selectPlanCtaText}}" onclick="javascript:void(0)" href="{{this.planPagePath}}" aria-label="{{this.selectPlanAriaLabel}}">{{this.selectPlanButtonLabel}}</a>
+                        </div>
+                    </div>
+                    <div class="plan-card-summary">
+                        <span><a href="javascript:void(0);" class="fcc-label-view-plan-link" aria-label="{{this.backToPlanText}} {{this.planName}}" data-gtm-cta="{{this.backToPlanAnalyticText}}">{{this.backToPlanText}}</a></span>
+                    </div>
+                    </div>
+    
+                {{else}}
+                    <div class="btn-plan">
+                        <div class="secondary-btn-black extra-large">
+                            <a class="btn plan-price-value" href="{{this.planPagePath}}" aria-label="{{this.selectPlanAriaLabel}}" data-gtm-cta="{{this.selectPlanCtaText}}">{{this.selectPlanButtonLabel}}</a>
+                        </div>
+                    </div>
+                    <div class="plan-card-summary">
+                        <span class="caption-text-one"><a href="javascript:void(0);" class="fcc-label-view-plan-link" aria-label="{{this.backToPlanAriaLabel}}" data-gtm-cta="{{this.backToPlanAnalyticText}}">{{this.backToPlanText}}</a></span>
+                    </div>
+                    </div>
+                    </div>
+                {{/if}}
+            {{/if}}
+        {{/if}}
+        {{/each}}
+    {{/each}}
+    </script>
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-xl-3 ml-0 mr-0 fcc-labels-responsedata" data-databspath="/content/dam/straighttalk/en/cf/fcc.facts.json" data-gtm-placement="fcc_plan_label" data-fcczipcodefeesapiurl="/catalog-mgmt/zipcode/fee" data-taxrequiredstates="AZ,HI,MA,NM" data-fccclientid="184119e4c97ebce0cc8fd412a24ba804">
+                    <div class="col pl-0 pr-0">
+                        <div class="plan-card text-center mb-60 d-flex flex-column" data-partnumber="STU65CHILD_P" tabindex="-1" data-gtm-asset="STU65CHILD_P" data-gtm-placement="plan_card">
+    
+                        <div class="promo-text promo-plan-text current-plan-text promo-text promo-plan-text current-plan-text bg-platinum">
+                            
+                <div class="pln-card-pill hideForCurrentPlan">
+                    <p><b>Best Value!</b></p>
+                </div>
+                <div class="tablet-pln-card-icon d-none">
+                    <img src=""> 
+                </div>
+                <div class="pln-card-pill my-current-plan hideForCurrentPlan d-none">
+                    <p>My current plan</p>
+                </div>
+                <span class="promo-text">
+               <span class="icon light-theme small-icon">
+               <img aria-hidden="true" src="/content/dam/straighttalk/icons/plans/product-specs/small/Plan_Card-pdp.svg" alt="" data-defaulticon="/content/dam/straighttalk/icons/plans/product-specs/small/Plan_Card-pdp.svg" data-selecticon="/content/dam/straighttalk/icons/plans/product-specs/small/Plan_Card.svg"></span>
+               <h3>Platinum Unlimited<sup><img src="/content/dam/straighttalk/icons/plans/product-specs/small/cross-black.svg" alt="See cross citation below for more information about plan"></sup></h3>
+    </span>
+    
+    
+                <p class="capital-one mt-2 regular-plan-price-parent d-none"><strike class="regular-plan-price"></strike></p>
+                <p aria-hidden="true" class="plan-price heading-two" data-planprice="$225">$225 <sup class="subtitle-one">/mo</sup>
+                     </p>
+                <span aria-hidden="true" class="d-none per-line-text mulitline-plan-superscript-text">/per line</span>
+                <p class="sr-only accessibility-plan-price">Price is 225 dollars and 0 cents per month</p>
+    
+                <p class="plan-price-offer caption-two hideForCurrentPlan" aria-hidden="true">$60/mo for the first 3 months with Auto Pay</p>
+    
+                <p class="mld-plan-savings hideForCurrentPlan" data-savingslabel="You'll save <span class=&quot;brand-banner-light&quot;>#planSavings</span> a month"></p>
+                <div class="plan-card-ticker d-none"></div>
+                <p class="d-none plan-price-accessibility">Price is #planPriceDollar dollars and #planPriceCent cents per month</p>
+                <p class="d-none plan-price-accessibility">price is dollar #priceDollar and #priceCent cents /mo</p>
+                <p class="d-none plan-price-discounted-accessibility">Was priced at #listPriceDollar dollars and #listPriceCent cents now priced at #priceDollar dollars and #priceCent cents	 /mo</p>
+                <div class="plan-rating d-none caption-three mx-auto">
+                    <ul class="rating" data-rating="0" aria-hidden="true">
+                        <li class="rating__item"></li>
+                        <li class="rating__item"></li>
+                        <li class="rating__item"></li>
+                        <li class="rating__item"></li>
+                        <li class="rating__item"></li>
+                        <li class="rating__text">(0)</li>
+                    </ul>
+                    <span class="sr-only">0 star reviews from 0 customer</span>
+                </div>
+                <p class="sr-only accessibility-plan-price">$60 per month for the first 3 months with Auto Pay</p>
+                <p aria-hidden="true" class="add-line-plan-price heading-two d-none"><sup class="subtitle-one">/mo</sup></p>
+    
+                
+                <p aria-hidden="true" class="acp-original-offer-price d-none caption-two pb-2" data-originalpricelabel="original price" data-originalaccessibility="is #planPriceDollar dollars and #planPriceCent cents monthly">/mo</p>
+                
+                <p class="sr-only acp-accs-plan-price-offer" data-acpaccsplanpriceoffer="{{acp-accs-plan-price-offer}}"></p>
+                <p class="price-per-line caption-two d-none">Pay <b>$225/month</b></p>
+                <p class="subtitle-two plan-minute d-none"></p>
+                
+            
+                        </div>
+    
+            <div class="broadband-list-container ">
+                <div class="broadband-list-details big-padding">
+                    <h4 class="heading-three small-padding" aria-label="Broadband Facts of Platinum Unlimited" tabindex="-1">Broadband Facts</h4>
+                    <div class="border-bottom-black-bold small-padding">
+                        <p class="caption-five min-padding">
+                            Straight Talk Wireless 
+                        </p>
+                        <p class="caption-five min-padding pt-01"> Platinum Unlimited</p>
+                        <p class="caption-six">Mobile Broadband Consumer Disclosure
+                        </p>
+                    </div>
+                    <div class="border-bottom-black-normal">
+                        <div class="row ml-0 mr-0 small-padding">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-four">Monthly Price</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-four"> $65.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black small-padding">
+                        <p class="caption-six">
+                        This Monthly Price is not an introductory rate.
+                        </p>
+                        <p class="caption-six">
+                        This Monthly Price does not require a contract.
+                        </p>
+                    </div>
+    
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding">Additional Charges &amp; Terms</p>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-six min-padding">Activation Fee</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-six-bold">$0.00</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-six min-padding">Provider Monthly Fees</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-six-bold">$0.00</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-six min-padding">One-Time Fees at the Time of Purchase</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-8 text-left left-padding">
+                                <p class="caption-six">Federal Universal Service Fund</p>
+                            </div>
+                            <div class="col-4 text-right right-padding">
+                                <p class="caption-six-bold"> $0.37</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left left-padding">
+                                <p class="caption-six">Regulatory Cost Recovery</p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">$0.13</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-six">Early Termination Fee</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-six-bold"> $0.00</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-six">Government Taxes</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-six-bold"> Varies by location</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="small-padding">
+                        <p class="caption-five min-padding">Discounts &amp; Bundles</p>
+                        <div class="caption-seven"> <p><a href="https://www.straighttalk.com/discount-and-bundles" aria-label=" Click here for available discounts and pricing options for broadband service bundled with other services(Opens in new tab)" target="_blank" data-gtm-cta="click_here">Click here</a>&nbsp;for available discounts and pricing options for broadband service bundled with other services like video, phones, and wireless services, and use of your own equipment like modem or routers.</p>
+    
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding"></p>
+                        <div class="caption-seven"> 
+                        </div>
+                        <div class="row ml-0 mr-0 small-padding-one">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-five">
+                                </p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-five"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black small-padding">
+                        <p class="caption-five min-padding">Speeds Provided with Plan</p>
+                        <p class="caption-five min-padding">5G Ultra Wideband</p>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Download Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-six-bold">195-634 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Upload Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">10-53 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Latency
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">37-57 ms</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black small-padding ">
+                        <p class="caption-five min-padding">5G</p>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Download Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-six-bold">35-143 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Upload Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">5-31 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Latency
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">42-64 ms</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding">4G LTE</p>
+    
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Download Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">11-75 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Upload Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">1-13 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Latency
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">49-75 ms</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <div class="row ml-0 mr-0 ">
+                            <div class="col-10 text-left p-0">
+                                <div class="caption-five min-padding"><p><a href="https://www.verizon.com/support/tracfone-open-internet-legal/" target="_blank" aria-label="Data Included(Opens in new tab)" data-gtm-cta="data_included">Data Included</a> with Monthly Price</p>
+    </div>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-six-bold"> Unlimited</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left">
+                                <p class="caption-six">Charges for additional Data Usage</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-six-bold"> $0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-bold small-padding">
+                        <div class="row ml-0 mr-0 read-pol">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-five">Network Management</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-five"> <a href="https://www.verizon.com/about/our-company/network-management" class="caption-one" aria-label="Read our Policy of Network Management Opens External Website in new tab" target="_blank" data-gtm-cta="read_our_policy">Read our Policy</a></p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 read-pol">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-five">Privacy</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-five"> <a href="https://www.tracfonewirelessinc.com/en/Privacy%2BPolicy/" class="caption-one" aria-label="Read our Policy of Privacy Opens External Website in new tab" target="_blank" data-gtm-cta="read_our_policy">Read our Policy</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding">Customer Support</p>
+                        <p class="caption-six left-padding">Contact Us:  <a href="https://www.straighttalk.com/support/contact" class="caption-two" aria-label="Straight Talk Wireless Contact Us opens in new tab" target="_blank" data-gtm-cta="https_www_straighttalk_com_support_contact">https://www.straighttalk.com/support/contact</a>
+                        </p><p class="caption-six left-padding">1-877-430-2355</p>
+                        <p></p>
+                    </div>
+                    <div class="facts-disclaimer small-padding-one">
+                        <p class="caption-seven min-padding">Learn more about the terms used on this label by visiting the Federal Communications Commission's Consumer Resource Center.
+                        </p>
+                        <p class="caption-eight text-left min-padding"> <a href="https://www.fcc.gov/consumer" aria-label="Federal Communications Commission Website Consumer Help Center Opens External Website in new tab" target="_blank" data-gtm-cta="fcc_gov_consumer">fcc.gov/consumer</a></p>
+                        <p class="caption-seven">M0006855639ST0000957004764</p>
+                    </div>
+                    <p class="sr-only">Broadband Facts Label Ends for Platinum Unlimited</p>
+                </div>
+            </div>
+                    <div class="btn-plan">
+                        <div class="secondary-btn-black extra-large">
+                            <a class="btn plan-price-value" href="https://www.straighttalk.com/all-plans/unlimited-nationwide-mobile-protect" aria-label="SELECT PLAN 
+               
+               
+               Platinum Unlimited
+     $225" data-gtm-cta="select_plan">SELECT PLAN</a>
+                        </div>
+                    </div>
+                    <div class="plan-card-summary">
+                        <span class="caption-text-one"><a href="javascript:void(0);" class="fcc-label-view-plan-link" aria-label="Back to plan summary 
+               
+               
+               Platinum Unlimited
+     $225" data-gtm-cta="back_to_plan_summary">Back to plan summary</a></span>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col pl-0 pr-0">
+                        <div class="plan-card text-center mb-60 d-flex flex-column" data-partnumber="STP20055_P" tabindex="-1" data-gtm-asset="STP20055_P" data-gtm-placement="plan_card">
+    
+                        <div class="promo-text promo-plan-text current-plan-text promo-text promo-plan-text current-plan-text bg-gold">
+                            
+                <div class="pln-card-pill hideForCurrentPlan">
+                    <p><b>5G Ultra Wide</b></p>
+                </div>
+                <div class="tablet-pln-card-icon d-none">
+                    <img src=""> 
+                </div>
+                <div class="pln-card-pill my-current-plan hideForCurrentPlan d-none">
+                    <p>My current plan</p>
+                </div>
+                <span class="promo-text">
+               <span class="icon light-theme small-icon">
+               <img aria-hidden="true" src="/content/dam/straighttalk/icons/plans/product-specs/small/Plan_Card-pdp.svg" alt="" data-defaulticon="/content/dam/straighttalk/icons/plans/product-specs/small/Plan_Card-pdp.svg" data-selecticon="/content/dam/straighttalk/icons/plans/product-specs/small/Plan_Card.svg"></span>
+               <h3>Gold Unlimited<sup><img src="/content/dam/straighttalk/icons/plans/product-specs/small/cross-black.svg" alt="See cross citation below for more information about plan"></sup></h3>
+    </span>
+    
+    
+                <p class="capital-one mt-2 regular-plan-price-parent d-none"><strike class="regular-plan-price"></strike></p>
+                <p aria-hidden="true" class="plan-price heading-two" data-planprice="$175">$175 <sup class="subtitle-one">/mo</sup>
+                     </p>
+                <span aria-hidden="true" class="d-none per-line-text mulitline-plan-superscript-text">/per line</span>
+                <p class="sr-only accessibility-plan-price">Price is 175 dollars and 0 cents per month</p>
+    
+                <p class="plan-price-offer caption-two hideForCurrentPlan" aria-hidden="true">$50/mo for the first 3 months with Auto Pay</p>
+    
+                <p class="mld-plan-savings hideForCurrentPlan" data-savingslabel="You'll save <span class=&quot;brand-banner-light&quot;>#planSavings</span> a month"></p>
+                <div class="plan-card-ticker d-none"></div>
+                <p class="d-none plan-price-accessibility">Price is #planPriceDollar dollars and #planPriceCent cents per month</p>
+                <p class="d-none plan-price-accessibility">price is dollar #priceDollar and #priceCent cents /mo</p>
+                <p class="d-none plan-price-discounted-accessibility">Was priced at #listPriceDollar dollars and #listPriceCent cents now priced at #priceDollar dollars and #priceCent cents	 /mo</p>
+                <div class="plan-rating d-none caption-three mx-auto">
+                    <ul class="rating" data-rating="4.0" aria-hidden="true">
+                        <li class="rating__item"></li>
+                        <li class="rating__item"></li>
+                        <li class="rating__item"></li>
+                        <li class="rating__item"></li>
+                        <li class="rating__item"></li>
+                        <li class="rating__text">(544)</li>
+                    </ul>
+                    <span class="sr-only">4.0 star reviews from 544 customer</span>
+                </div>
+                <p class="sr-only accessibility-plan-price">$50 per month for the first 3 months with Auto Pay</p>
+                <p aria-hidden="true" class="add-line-plan-price heading-two d-none"><sup class="subtitle-one">/mo</sup></p>
+    
+                
+                <p aria-hidden="true" class="acp-original-offer-price d-none caption-two pb-2" data-originalpricelabel="original price" data-originalaccessibility="is #planPriceDollar dollars and #planPriceCent cents monthly">/mo</p>
+                
+                <p class="sr-only acp-accs-plan-price-offer" data-acpaccsplanpriceoffer="{{acp-accs-plan-price-offer}}"></p>
+                <p class="price-per-line caption-two d-none">Pay <b>$175/month</b></p>
+                <p class="subtitle-two plan-minute d-none"></p>
+                
+            
+                        </div>
+    
+            <div class="broadband-list-container ">
+                <div class="broadband-list-details big-padding">
+                    <h4 class="heading-three small-padding" aria-label="Broadband Facts of Gold Unlimited" tabindex="-1">Broadband Facts</h4>
+                    <div class="border-bottom-black-bold small-padding">
+                        <p class="caption-five min-padding">
+                            Straight Talk Wireless 
+                        </p>
+                        <p class="caption-five min-padding pt-01"> Gold Unlimited</p>
+                        <p class="caption-six">Mobile Broadband Consumer Disclosure
+                        </p>
+                    </div>
+                    <div class="border-bottom-black-normal">
+                        <div class="row ml-0 mr-0 small-padding">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-four">Monthly Price</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-four"> $55.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black small-padding">
+                        <p class="caption-six">
+                        This Monthly Price is not an introductory rate.
+                        </p>
+                        <p class="caption-six">
+                        This Monthly Price does not require a contract.
+                        </p>
+                    </div>
+    
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding">Additional Charges &amp; Terms</p>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-six min-padding">Activation Fee</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-six-bold">$0.00</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-six min-padding">Provider Monthly Fees</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-six-bold">$0.00</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-six min-padding">One-Time Fees at the Time of Purchase</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-8 text-left left-padding">
+                                <p class="caption-six">Federal Universal Service Fund</p>
+                            </div>
+                            <div class="col-4 text-right right-padding">
+                                <p class="caption-six-bold"> $0.31</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left left-padding">
+                                <p class="caption-six">Regulatory Cost Recovery</p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">$0.11</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-six">Early Termination Fee</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-six-bold"> $0.00</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-six">Government Taxes</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-six-bold"> Varies by location</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="small-padding">
+                        <p class="caption-five min-padding">Discounts &amp; Bundles</p>
+                        <div class="caption-seven"> <p><a href="https://www.straighttalk.com/discount-and-bundles" aria-label=" Click here for available discounts and pricing options for broadband service bundled with other services(Opens in new tab)" target="_blank" data-gtm-cta="click_here">Click here</a>&nbsp;for available discounts and pricing options for broadband service bundled with other services like video, phones, and wireless services, and use of your own equipment like modem or routers.</p>
+    
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding"></p>
+                        <div class="caption-seven"> 
+                        </div>
+                        <div class="row ml-0 mr-0 small-padding-one">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-five">
+                                </p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-five"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black small-padding">
+                        <p class="caption-five min-padding">Speeds Provided with Plan</p>
+                        <p class="caption-five min-padding">5G Ultra Wideband</p>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Download Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-six-bold">195-634 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Upload Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">10-53 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Latency
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">37-57 ms</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black small-padding ">
+                        <p class="caption-five min-padding">5G</p>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Download Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-six-bold">35-143 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Upload Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">5-31 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Latency
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">42-64 ms</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding">4G LTE</p>
+    
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Download Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">11-75 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Upload Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">1-13 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Latency
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">49-75 ms</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <div class="row ml-0 mr-0 ">
+                            <div class="col-10 text-left p-0">
+                                <div class="caption-five min-padding"><p><a href="https://www.verizon.com/support/tracfone-open-internet-legal/" target="_blank" aria-label="Data Included(Opens in new tab)" data-gtm-cta="data_included">Data Included</a> with Monthly Price</p>
+    </div>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-six-bold"> Unlimited</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left">
+                                <p class="caption-six">Charges for additional Data Usage</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-six-bold"> $0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-bold small-padding">
+                        <div class="row ml-0 mr-0 read-pol">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-five">Network Management</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-five"> <a href="https://www.verizon.com/about/our-company/network-management" class="caption-one" aria-label="Read our Policy of Network Management Opens External Website in new tab" target="_blank" data-gtm-cta="read_our_policy">Read our Policy</a></p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 read-pol">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-five">Privacy</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-five"> <a href="https://www.tracfonewirelessinc.com/en/Privacy%2BPolicy/" class="caption-one" aria-label="Read our Policy of Privacy Opens External Website in new tab" target="_blank" data-gtm-cta="read_our_policy">Read our Policy</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding">Customer Support</p>
+                        <p class="caption-six left-padding">Contact Us:  <a href="https://www.straighttalk.com/support/contact" class="caption-two" aria-label="Straight Talk Wireless Contact Us opens in new tab" target="_blank" data-gtm-cta="https_www_straighttalk_com_support_contact">https://www.straighttalk.com/support/contact</a>
+                        </p><p class="caption-six left-padding">1-877-430-2355</p>
+                        <p></p>
+                    </div>
+                    <div class="facts-disclaimer small-padding-one">
+                        <p class="caption-seven min-padding">Learn more about the terms used on this label by visiting the Federal Communications Commission's Consumer Resource Center.
+                        </p>
+                        <p class="caption-eight text-left min-padding"> <a href="https://www.fcc.gov/consumer" aria-label="Federal Communications Commission Website Consumer Help Center Opens External Website in new tab" target="_blank" data-gtm-cta="fcc_gov_consumer">fcc.gov/consumer</a></p>
+                        <p class="caption-seven">M0006855639ST0000924004776</p>
+                    </div>
+                    <p class="sr-only">Broadband Facts Label Ends for Gold Unlimited</p>
+                </div>
+            </div>
+                    <div class="btn-plan">
+                        <div class="secondary-btn-black extra-large">
+                            <a class="btn plan-price-value" href="https://www.straighttalk.com/all-plans/ultimate-unlimited-no-contract" aria-label="SELECT PLAN 
+               
+               
+               Gold Unlimited
+     $175" data-gtm-cta="select_plan">SELECT PLAN</a>
+                        </div>
+                    </div>
+                    <div class="plan-card-summary">
+                        <span class="caption-text-one"><a href="javascript:void(0);" class="fcc-label-view-plan-link" aria-label="Back to plan summary 
+               
+               
+               Gold Unlimited
+     $175" data-gtm-cta="back_to_plan_summary">Back to plan summary</a></span>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col pl-0 pr-0">
+                        <div class="plan-card text-center mb-60 d-flex flex-column" data-partnumber="NTNMP00045_P" tabindex="-1" data-gtm-asset="NTNMP00045_P" data-gtm-placement="plan_card">
+    
+                        <div class="promo-text promo-plan-text current-plan-text promo-text promo-plan-text current-plan-text bg-silver">
+                            
+                <div class="pln-card-pill hideForCurrentPlan d-none">
+                    <p></p>
+                </div>
+                <div class="tablet-pln-card-icon d-none">
+                    <img src=""> 
+                </div>
+                <div class="pln-card-pill my-current-plan hideForCurrentPlan d-none">
+                    <p>My current plan</p>
+                </div>
+                <span class="promo-text">
+               <span class="icon light-theme small-icon">
+               <img aria-hidden="true" src="/content/dam/straighttalk/icons/plans/product-specs/small/Plan_Card-pdp.svg" alt="" data-defaulticon="/content/dam/straighttalk/icons/plans/product-specs/small/Plan_Card-pdp.svg" data-selecticon="/content/dam/straighttalk/icons/plans/product-specs/small/Plan_Card.svg"></span>
+               <h3>Silver Unlimited</h3>
+    </span>
+    
+    
+                <p class="capital-one mt-2 regular-plan-price-parent d-none"><strike class="regular-plan-price"></strike></p>
+                <p aria-hidden="true" class="plan-price heading-two" data-planprice="$125">$125 <sup class="subtitle-one">/mo</sup>
+                     </p>
+                <span aria-hidden="true" class="d-none per-line-text mulitline-plan-superscript-text">/per line</span>
+                <p class="sr-only accessibility-plan-price">Price is 125 dollars and 0 cents per month</p>
+    
+                <p class="plan-price-offer caption-two hideForCurrentPlan" aria-hidden="true">$42.50/mo for the first 3 months with Auto Pay</p>
+    
+                <p class="mld-plan-savings hideForCurrentPlan d-none" data-savingslabel="You'll save <span class=&quot;brand-banner-light&quot;>#planSavings</span> a month"></p>
+                <div class="plan-card-ticker d-none">HOT</div>
+                <p class="d-none plan-price-accessibility">Price is #planPriceDollar dollars and #planPriceCent cents per month</p>
+                <p class="d-none plan-price-accessibility">price is dollar #priceDollar and #priceCent cents /mo</p>
+                <p class="d-none plan-price-discounted-accessibility">Was priced at #listPriceDollar dollars and #listPriceCent cents now priced at #priceDollar dollars and #priceCent cents	 /mo</p>
+                <div class="plan-rating d-none caption-three mx-auto">
+                    <ul class="rating" data-rating="0" aria-hidden="true">
+                        <li class="rating__item"></li>
+                        <li class="rating__item"></li>
+                        <li class="rating__item"></li>
+                        <li class="rating__item"></li>
+                        <li class="rating__item"></li>
+                        <li class="rating__text">(0)</li>
+                    </ul>
+                    <span class="sr-only">0 star reviews from 0 customer</span>
+                </div>
+                <p class="sr-only accessibility-plan-price">$42.50 per month for the first 3 months with Auto Pay</p>
+                <p aria-hidden="true" class="add-line-plan-price heading-two d-none"><sup class="subtitle-one">/mo</sup></p>
+    
+                
+                <p aria-hidden="true" class="acp-original-offer-price d-none caption-two pb-2" data-originalpricelabel="original price" data-originalaccessibility="is #planPriceDollar dollars and #planPriceCent cents monthly">/mo</p>
+                
+                <p class="sr-only acp-accs-plan-price-offer" data-acpaccsplanpriceoffer="{{acp-accs-plan-price-offer}}"></p>
+                <p class="price-per-line caption-two d-none">Pay <b>$125/month</b></p>
+                <p class="subtitle-two plan-minute d-none"></p>
+                
+            
+                        </div>
+    
+            <div class="broadband-list-container ">
+                <div class="broadband-list-details big-padding">
+                    <h4 class="heading-three small-padding" aria-label="Broadband Facts of Silver Unlimited" tabindex="-1">Broadband Facts</h4>
+                    <div class="border-bottom-black-bold small-padding">
+                        <p class="caption-five min-padding">
+                            Straight Talk Wireless 
+                        </p>
+                        <p class="caption-five min-padding pt-01"> Silver Unlimited</p>
+                        <p class="caption-six">Mobile Broadband Consumer Disclosure
+                        </p>
+                    </div>
+                    <div class="border-bottom-black-normal">
+                        <div class="row ml-0 mr-0 small-padding">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-four">Monthly Price</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-four"> $45.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black small-padding">
+                        <p class="caption-six">
+                        This Monthly Price is not an introductory rate.
+                        </p>
+                        <p class="caption-six">
+                        This Monthly Price does not require a contract.
+                        </p>
+                    </div>
+    
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding">Additional Charges &amp; Terms</p>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-six min-padding">Activation Fee</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-six-bold">$0.00</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-six min-padding">Provider Monthly Fees</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-six-bold">$0.00</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-six min-padding">One-Time Fees at the Time of Purchase</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-8 text-left left-padding">
+                                <p class="caption-six">Federal Universal Service Fund</p>
+                            </div>
+                            <div class="col-4 text-right right-padding">
+                                <p class="caption-six-bold"> $0.26</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left left-padding">
+                                <p class="caption-six">Regulatory Cost Recovery</p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">$0.09</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-six">Early Termination Fee</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-six-bold"> $0.00</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-six">Government Taxes</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-six-bold"> Varies by location</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="small-padding">
+                        <p class="caption-five min-padding">Discounts &amp; Bundles</p>
+                        <div class="caption-seven"> <p><a href="https://www.straighttalk.com/discount-and-bundles" aria-label=" Click here for available discounts and pricing options for broadband service bundled with other services(Opens in new tab)" target="_blank" data-gtm-cta="click_here">Click here</a>&nbsp;for available discounts and pricing options for broadband service bundled with other services like video, phones, and wireless services, and use of your own equipment like modem or routers.</p>
+    
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding"></p>
+                        <div class="caption-seven"> 
+                        </div>
+                        <div class="row ml-0 mr-0 small-padding-one">
+                            <div class="col-10 text-left p-0">
+                                <p class="caption-five">
+                                </p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-five"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-0 small-padding">
+                        <p class="caption-five min-padding">Speeds Provided with Plan</p>
+                    </div>
+                    <div class="border-bottom-black small-padding pt-0">
+                        <p class="caption-five min-padding">5G</p>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Download Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-six-bold">34-149 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Upload Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">6-37 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Latency
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">42-63 ms</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding">4G LTE</p>
+    
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Download Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">9-69 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 min-padding">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Upload Speed
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">1-13 Mbps</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-7 text-left">
+                                <p class="caption-six">Typical Latency
+                                </p>
+                            </div>
+                            <div class="col-5 text-right right-padding">
+                                <p class="caption-six-bold">51-82 ms</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <div class="row ml-0 mr-0 ">
+                            <div class="col-10 text-left p-0">
+                                <div class="caption-five min-padding"><p><a href="https://www.verizon.com/support/tracfone-open-internet-legal/" target="_blank" aria-label="Data Included(Opens in new tab)" data-gtm-cta="data_included">Data Included</a> with Monthly Price</p>
+    </div>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-six-bold"> Unlimited</p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0">
+                            <div class="col-10 text-left">
+                                <p class="caption-six">Charges for additional Data Usage</p>
+                            </div>
+                            <div class="col-2 text-right p-0">
+                                <p class="caption-six-bold"> $0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-bold small-padding">
+                        <div class="row ml-0 mr-0 read-pol">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-five">Network Management</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-five"> <a href="https://www.verizon.com/about/our-company/network-management" class="caption-one" aria-label="Read our Policy of Network Management Opens External Website in new tab" target="_blank" data-gtm-cta="read_our_policy">Read our Policy</a></p>
+                            </div>
+                        </div>
+                        <div class="row ml-0 mr-0 read-pol">
+                            <div class="col-7 text-left p-0">
+                                <p class="caption-five">Privacy</p>
+                            </div>
+                            <div class="col-5 text-right p-0">
+                                <p class="caption-five"> <a href="https://www.tracfonewirelessinc.com/en/Privacy%2BPolicy/" class="caption-one" aria-label="Read our Policy of Privacy Opens External Website in new tab" target="_blank" data-gtm-cta="read_our_policy">Read our Policy</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom-black-normal small-padding">
+                        <p class="caption-five min-padding">Customer Support</p>
+                        <p class="caption-six left-padding">Contact Us:  <a href="https://www.straighttalk.com/support/contact" class="caption-two" aria-label="Straight Talk Wireless Contact Us opens in new tab" target="_blank" data-gtm-cta="https_www_straighttalk_com_support_contact">https://www.straighttalk.com/support/contact</a>
+                        </p><p class="caption-six left-padding">1-877-430-2355</p>
+                        <p></p>
+                    </div>
+                    <div class="facts-disclaimer small-padding-one">
+                        <p class="caption-seven min-padding">Learn more about the terms used on this label by visiting the Federal Communications Commission's Consumer Resource Center.
+                        </p>
+                        <p class="caption-eight text-left min-padding"> <a href="https://www.fcc.gov/consumer" aria-label="Federal Communications Commission Website Consumer Help Center Opens External Website in new tab" target="_blank" data-gtm-cta="fcc_gov_consumer">fcc.gov/consumer</a></p>
+                        <p class="caption-seven">M0006855639ST0000825004790</p>
+                    </div>
+                    <p class="sr-only">Broadband Facts Label Ends for Silver Unlimited</p>
+                </div>
+            </div>
+                    <div class="btn-plan">
+                        <div class="secondary-btn-black extra-large">
+                            <a class="btn plan-price-value" href="https://www.straighttalk.com/all-plans/unlimited-nationwide-25gb-no-contract" aria-label="SELECT PLAN 
+               
+               
+               Silver Unlimited
+     $125" data-gtm-cta="select_plan">SELECT PLAN</a>
+                        </div>
+                    </div>
+                    <div class="plan-card-summary">
+                        <span class="caption-text-one"><a href="javascript:void(0);" class="fcc-label-view-plan-link" aria-label="Back to plan summary 
+               
+               
+               Silver Unlimited
+     $125" data-gtm-cta="back_to_plan_summary">Back to plan summary</a></span>
+                    </div>
+                    </div>
+                    </div>
+    </div>
+        
+        
+        
+          <div class="w-100 d-none no-fcc-facts-error">
+            <span class="icon light-theme large-icon"><i class="error" role="presentation"></i></span>
+            <span class="caption-two error-text" aria-live="polite" aria-atomic="true">No Broadband Facts Labels available</span>
+          </div>
+        
+        
+    
+    
+    </div>
+    
+        
+    </div>
+    
+                </div>
+            </div>
+        </div>
+        <div data-gtm-placement="fcc_download" class="btn-plan download-fcc-labels pt-20 display-center pb-20">
+            <div class="primary-btn large">
+                <a class="btn plan-price-value download-fcc-labels-btn" href="javascript:void(0);" aria-label="Download Broadband Labels" data-gtm-cta="download_broadband_labels">Download Broadband Labels</a>
+            </div>
+        </div>
+    </div>
+</html>
