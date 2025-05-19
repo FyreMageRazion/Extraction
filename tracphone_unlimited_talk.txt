@@ -1,0 +1,76 @@
+Plan Name:
+$40 Unlimited Talk and Text, 20GB of Data (Hotspot Capable) + ID Protection — 30 Days
+
+Provider: Tracfone Wireless
+Plan Type: Prepaid mobile broadband
+Disclosure Type: Mobile Broadband Consumer Disclosure
+
+Monthly Price
+Cost: $40.00 per 30-day cycle
+
+Contract: No contract required
+
+Introductory Rate: This is not an introductory rate
+
+Fees and Charges
+Activation Fee: $0.00
+
+Monthly Provider Fees: $0.00
+
+One-Time Fees at Purchase:
+
+Federal Universal Service Fund: $0.23
+
+Regulatory Cost Recovery: $0.08
+
+Early Termination Fee: $0.00
+
+Government Taxes: Varies by location
+
+Discounts and Bundles
+Discounts and bundling options are available when combining with other Tracfone services (video, phones, wireless services) or using your own equipment (e.g., modem/router).
+
+For full details: https://www.tracfone.com/discount-and-bundles
+
+Included Data
+Monthly High-Speed Data Included: 20 GB
+
+Overage Charges: $0.00 (no extra charge for additional data)
+
+Speed Performance
+5G Network (Where Available):
+
+Typical Download Speed: 35–143 Mbps
+
+Typical Upload Speed: 5–31 Mbps
+
+Typical Latency: 42–64 ms
+
+4G LTE Network:
+
+Typical Download Speed: 11–75 Mbps
+
+Typical Upload Speed: 1–13 Mbps
+
+Typical Latency: 49–75 ms
+
+Hotspot Capability
+This plan allows use of mobile hotspot with the included 20 GB of data.
+
+ID Protection
+Included in the plan offering (no specific technical detail provided on protection features).
+
+Network Policies
+Network Management Policy: https://www.verizon.com/about/our-company/network-management
+
+Privacy Policy: https://www.tracfonewirelessinc.com/en/Privacy%2BPolicy/
+
+Customer Support
+Phone: 1-800-867-7183
+
+Website Contact Form: https://www.tracfone.com/support/contact-us
+
+Additional Resources
+Learn more about broadband terms: FCC Consumer Resource Center
+
+FCC reference ID: M0006855639TF0000862005043
