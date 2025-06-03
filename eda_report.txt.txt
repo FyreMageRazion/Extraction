@@ -1,0 +1,5 @@
+feature1 has 6 values with a mean of 3.0 and a standard deviation of approximately 1.41. The minimum value is 1.0 and the maximum is 5.0. The 25th percentile is 2.25, the median (50th percentile) is 3.0, and the 75th percentile is 3.75.
+
+feature2 has 6 values with a mean of approximately 6.03 and a standard deviation of about 1.36. The minimum value is 4.3 and the maximum is 8.0. The 25th percentile is 5.1, the median is 5.85, and the 75th percentile is 6.6.
+
+category is a categorical column with 3 unique values: A, B, and C. The value A appears 3 times, B appears 2 times, and C appears once. The most frequent category is A.
