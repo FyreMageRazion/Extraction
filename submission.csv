@@ -1,0 +1,71 @@
+"query","response"
+"Top 5 merchants by debit spend in July 2025.","The top 5 merchants by debit spend in July 2025 are:
+1. IRCTC with a total spend of 10,02,190.00 INR
+2. Zomato with a total spend of 9,65,256.00 INR
+3. Swiggy with a total spend of 9,65,091.00 INR
+4. Apple Store with a total spend of 6,88,285.00 INR
+5. Amazon India with a total spend of 5,95,250.00 INR"
+"Count active accounts by account type.","The count of active accounts by account type is as follows:
+
+1. Checking: 12
+2. Savings: 10"
+"List the top 3 spending categories by total transaction value.","The top 3 spending categories by total transaction value are:
+
+1. Salary with a total spending of 4,83,87,171.00 INR
+2. Travel with a total spending of 2,06,53,960.00 INR
+3. Electronics with a total spending of 1,89,97,311.00 INR"
+"Top 3 customers who spent the most on dining in 2025.","The top 3 customers who spent the most on dining in 2025 are: 
+1. Advait Das with a total spending of 10,66,102.00 INR 
+2. Rahul Khan with a total spending of 7,97,452.00 INR 
+3. Kabir Gupta with a total spending of 6,41,541.00 INR"
+"Current balance for the top 5 accounts (all time). Show their ids and names.","The current balances for the top 5 accounts are:
+
+1. Ishaan Khan with a balance of 6,29,689.00 INR
+2. Kabir Das with a balance of 5,63,425.00 INR
+3. Aarav Verma with a balance of 1,99,860.00 INR
+4. Sana Khan with a balance of 1,22,081.00 INR
+5. Kabir Gupta with a balance of 82,746.00 INR"
+"Give me the total deposits by branch.","The total deposits by branch are as follows:
+
+1. Mumbai Fort with total deposits of 2,01,84,516.00 INR
+2. Bengaluru MG Road with total deposits of 1,57,35,198.00 INR
+3. Delhi CP with total deposits of 1,52,02,196.00 INR"
+"Which branch has the highest number of customers.","The branch with the highest number of customers is Mumbai Fort, which has 9 customers."
+"Show the top 5 highest-value transactions in 2025 with customer and merchant details.","The top 5 highest-value transactions in 2025 are:
+
+1. Transaction ID T0C5NR9MI5 with an amount of 2,99,986.00 INR by Kabir Gupta at Uber.
+2. Transaction ID TBCUQWENV3 with an amount of 2,96,137.00 INR by Rahul Khan at Zomato.
+3. Transaction ID TBR06PSICJ with an amount of 2,93,995.00 INR by Arjun Reddy at Swiggy.
+4. Transaction ID T7ZVN0FC9B with an amount of 2,93,592.00 INR by Neha Bose at Reliance Retail.
+5. Transaction ID T9L7RETKL6 with an amount of 2,91,505.00 INR by Diya Bose at Flipkart. 
+
+These transactions represent the highest monetary values amongst all transactions recorded in 2025."
+"Top 5 merchants by number of disputes (all time).","The top 5 merchants by the number of disputes (all time) are:
+1. Swiggy with 2 disputes
+2. Employer Payroll with 2 disputes
+3. Uber with 1 dispute
+4. IRCTC with 1 dispute
+5. Bank Transfer In with 1 dispute"
+"Show transaction volume numbers and percentage gain or decline for all bank branches in 2024 vs. 2025.","The transaction volumes and percentage changes for each bank branch in 2024 versus 2025 are as follows:
+
+1. Mumbai Fort: 
+   - Transaction Volume in 2024: 1,67,42,356.00 INR
+   - Transaction Volume in 2025: 3,32,78,930.00 INR
+   - Percentage Gain: 98.77%
+
+2. Bengaluru MG Road:
+   - Transaction Volume in 2024: 1,36,53,624.00 INR
+   - Transaction Volume in 2025: 2,40,44,328.00 INR
+   - Percentage Gain: 76.10%
+
+3. Delhi CP:
+   - Transaction Volume in 2024: 1,13,50,717.00 INR
+   - Transaction Volume in 2025: 2,56,72,314.00 INR
+   - Percentage Gain: 126.17%"
+"Top 5 Average customer debit spend by merchant in 2025.","The top 5 average customer debit spend by merchant in 2025 are:
+
+1. Reliance Retail with an average spend of 1,17,148.32 INR
+2. Amazon India with an average spend of 1,14,694.58 INR
+3. Apple Store with an average spend of 1,11,275.32 INR
+4. Uber with an average spend of 1,07,809.51 INR
+5. IRCTC with an average spend of 1,05,685.65 INR"
