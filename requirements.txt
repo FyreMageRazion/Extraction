@@ -1,0 +1,26 @@
+# Agentic AI Capstone Project Dependencies
+
+# Core AI/ML Libraries
+autogen==0.10.1
+crewai==0.203.0
+crewai-tools==0.76.0
+langchain==0.3.27
+langchain-chroma==0.2.5
+langchain-community==0.3.27
+langchain-core==0.3.80
+langchain-openai==0.3.30
+langgraph==0.6.5
+pydantic==2.11.10
+pandas==2.3.3
+
+# PDF Parsing Libraries
+pdfplumber>=0.11.4  # Updated to meet crewai dependency (crewai requires >=0.11.4)
+Pillow==10.4.0
+# pymupdf==1.24.0  # Optional: For better image extraction (requires build tools on Windows)
+
+# SQLite (usually built-in, but including for completeness)
+# Note: sqlite3 is built into Python, but if needed:
+# pysqlite3-binary==0.5.0
+
+# OpenAI (for future Azure OpenAI support)
+openai>=1.99.9,<2.0.0  # Updated to meet langchain-openai dependency (requires >=1.99.9,<2.0.0)
